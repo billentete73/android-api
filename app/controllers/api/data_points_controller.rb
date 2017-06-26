@@ -5,5 +5,13 @@ class Api::DataPointsController < ApplicationController
   end
 
   def create
+    @params = params
+    render 'api/data_points/show'
+  end
+
+  private
+
+  def data_point_params
+    
   end
 end

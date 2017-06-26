@@ -1,4 +1,4 @@
-json.array! do |data_point|
+json.array! @data_points do |data_point|
   json.id data_point.id
   json.age data_point.age
   json.gender data_point.gender
