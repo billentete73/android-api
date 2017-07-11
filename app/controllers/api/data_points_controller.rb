@@ -19,6 +19,7 @@ class Api::DataPointsController < ApplicationController
     params.permit(
       :name,
       :age,
+      :job,
       :gender,
       :date_trip,
       :mode_trip,
