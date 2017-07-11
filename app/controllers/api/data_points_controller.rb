@@ -26,8 +26,13 @@ class Api::DataPointsController < ApplicationController
       :crowded_trip,
       :from_trip,
       :to_trip,
-      :majo_gender,
-      :majo_origin
+      :majo_origin,
+      :proportion_men,
+      :proportion_women,
+      :proportion_children,
+      :events_seen,
+      :quality_trip,
+      :commentary
     )
   end
 end

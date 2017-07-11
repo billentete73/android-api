@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170626211916) do
+ActiveRecord::Schema.define(version: 20170711001436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,10 +25,15 @@ ActiveRecord::Schema.define(version: 20170626211916) do
     t.string   "crowded_trip"
     t.string   "from_trip"
     t.string   "to_trip"
-    t.string   "majo_gender"
     t.string   "majo_origin"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.string   "proportion_men"
+    t.string   "proportion_women"
+    t.string   "proportion_children"
+    t.string   "events_seen"
+    t.string   "quality_trip"
+    t.text     "commentary"
   end
 
 end
